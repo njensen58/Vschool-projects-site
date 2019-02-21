@@ -4,6 +4,7 @@
 
 .home header {
     background-image: url(../resources/cowork.jpg);
+    background-position: center;
     background-size: cover;
     height: 200px;
 }
@@ -50,11 +51,16 @@ footer span {
     color: #eee9;
 }
 
+
 footer div {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #555;
-  
+    transition: color .2s linear;
+}
+
+footer div:hover {
+    color: white;
 }

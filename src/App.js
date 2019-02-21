@@ -1,6 +1,8 @@
 import React from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Home from './components/Home.js'
+import ProjectList from './components/ProjectList.js'
+import routesData from './static-data/routes.json'
 import './styles/index.css'
 
 const App = props => {
@@ -8,11 +10,10 @@ const App = props => {
         <div>
             <Switch>
                 <Route exact path="/"             render={ rProps => <Home {...rProps}/> }/>
-                <Route path="/precourse-work"     render={ rProps => <></>}/>
-                <Route path="/html-css-js"        render={ rProps => <></>}/>
-                <Route path="/react-api"          render={ rProps => <></>}/>
-                <Route path="/personal-fullstack" render={ rProps => <></>}/>
-                <Route path="/group-fullstack"    render={ rProps => <></>}/>
+                { routesData.routes.map(({path, listTitle, listDescription, projectArr}, i) => 
+                    <Route path={path} key={i} render={rProps => 
+                        <ProjectList {...rProps} listTitle={listTitle} listDescription={listDescription}/>}/>
+                )}
             </Switch>
             <footer>
                 <span>V School</span>

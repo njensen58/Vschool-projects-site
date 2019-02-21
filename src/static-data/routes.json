@@ -1,0 +1,34 @@
+{
+    "routes": [
+        {
+            "path": "/precourse-work",
+            "listTitle": "Pre Course Work",
+            "listDescription": "Examples",
+            "projectsArr": []
+        },
+        {
+            "path": "/html-css-js",
+            "listTitle": "HTML/CSS/JS",
+            "listDescription": "Examples",
+            "projectsArr": []
+        },
+        {
+            "path": "/react-api",
+            "listTitle": "React API",
+            "listDescription": "Examples",
+            "projectsArr": []
+        },
+        {
+            "path": "/personal-fullstack",
+            "listTitle": "Personal Full Stack",
+            "listDescription": "Examples",
+            "projectsArr": []
+        },
+        {
+            "path": "/group-fullstack",
+            "listTitle": "Group Full Stack",
+            "listDescription": "Examples",
+            "projectsArr": []
+        }
+    ]
+}

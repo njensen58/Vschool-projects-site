@@ -1,12 +1,12 @@
 import React from 'react'
-import ProjectImg from './ProjectImage'
+import ProjectImage from './ProjectImage'
 import PropTypes from 'prop-types'
 
 const Project = ({title, description, projectUrl, projectImg}) => {
     return (
         <div>
             <div>
-                <ProjectImg projectImg={projectImg}/>
+                <ProjectImage projectImg={projectImg}/>
             </div>
             <div>
                 <h1>{title}</h1>
@@ -18,7 +18,7 @@ const Project = ({title, description, projectUrl, projectImg}) => {
 }
 
 
-Project.proptypes = {
+Project.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string,
     projectImg: PropTypes.string,

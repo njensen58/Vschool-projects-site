@@ -1,5 +1,5 @@
 import React from 'react'
-import ProptTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const ProjectImage = ({ projectImg }) => {
     return (
@@ -13,7 +13,7 @@ const ProjectImage = ({ projectImg }) => {
     )
 }
 
-Project.proptypes = {
+ProjectImage.propTypes = {
     projectImg: PropTypes.string
 }
 
