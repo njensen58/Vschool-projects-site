@@ -24,19 +24,37 @@
 }
 
 .project-container div:nth-child(1){
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .project-container div:nth-child(2){
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .project-container h1 {
     font-size: 20px;
 }
 
+.project-container p {
+    font-size: 12px;
+}
 
+.project-container a {
+    font-size: 12px;
+    text-decoration: underline;
+    
+}
 
+.project-container a:active {
+    color: black
+}
+
+.project-container a:visited {
+    color: black
+}
 
 .img-container {
     width: 110px;
