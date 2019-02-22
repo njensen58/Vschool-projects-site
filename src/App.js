@@ -7,7 +7,7 @@ import './styles/index.css'
 
 const App = props => {
     return (
-        <div>
+        <div className="app-container">
             <Switch>
                 <Route exact path="/"             render={ rProps => <Home {...rProps}/> }/>
                 { routesData.routes.map(({path, listTitle, listDescription, projectsArr}, i) => 

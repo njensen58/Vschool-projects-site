@@ -2,6 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.list-container header {
+    background-image: url(../resources/cowork.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.list-container h3 {
+    font-size: 16px;
+    padding: 5px;
 }
 
 .project-container {
@@ -19,13 +32,15 @@
 }
 
 .project-container h1 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
+
+
 .img-container {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     border: 1px solid black;
     border-radius: 10px;
 }

@@ -5,7 +5,7 @@ import '../styles/project.css'
 
 const ProjectList = ({listName, listDescription, projectsArr}) => {
     return (
-        <div>
+        <div className="list-container">
             <header>
                 <div className="overlay">
                     <h1>{listName}</h1>
