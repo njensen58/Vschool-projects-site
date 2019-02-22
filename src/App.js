@@ -10,9 +10,13 @@ const App = props => {
         <div>
             <Switch>
                 <Route exact path="/"             render={ rProps => <Home {...rProps}/> }/>
-                { routesData.routes.map(({path, listTitle, listDescription, projectArr}, i) => 
+                { routesData.routes.map(({path, listTitle, listDescription, projectsArr}, i) => 
                     <Route path={path} key={i} render={rProps => 
-                        <ProjectList {...rProps} listTitle={listTitle} listDescription={listDescription}/>}/>
+                        <ProjectList 
+                            {...rProps} 
+                            listName={listTitle} 
+                            listDescription={listDescription} 
+                            projectsArr={projectsArr}/>}/>
                 )}
             </Switch>
             <footer>

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 const Project = ({title, description, projectUrl, projectImg}) => {
     return (
-        <div>
-            <div>
+        <div className="project-container">
+            <div className="img-container">
                 <ProjectImage projectImg={projectImg}/>
             </div>
             <div>

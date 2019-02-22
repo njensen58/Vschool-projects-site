@@ -1,16 +1,19 @@
 import React from 'react'
 import Project from './Project'
 import PropTypes from 'prop-types'
+import '../styles/project.css'
 
 const ProjectList = ({listName, listDescription, projectsArr}) => {
     return (
         <div>
             <header>
-                <h1>{listName}</h1>
-                <h3>{listDescription}</h3>
+                <div className="overlay">
+                    <h1>{listName}</h1>
+                    <h3>{listDescription}</h3>
+                </div>
             </header>
-            <div>
-                { projectsArr.map(project => <Project {...project} key={project.id}/>)}
+            <div className="project-list-container">
+                { projectsArr.map((project, i)=> <Project {...project} key={i}/>)}
             </div>
         </div>
     )

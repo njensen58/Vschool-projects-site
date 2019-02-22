@@ -4,11 +4,8 @@ import PropTypes from 'prop-types'
 const ProjectImage = ({ projectImg }) => {
     return (
         <div
-            style={{
-                backgroundImage: `url(${projectImg})`,
-                width: '100%'
-            }}
-            className="">
+            style={{ backgroundImage: `url(${projectImg})`}} 
+            className="project-img">
         </div>
     )
 }
